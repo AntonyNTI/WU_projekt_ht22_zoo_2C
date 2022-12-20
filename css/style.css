@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
 
- *{
+*{
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -9,17 +8,15 @@
     box-sizing: border-box;
  }
 
- body{
+ /* homepage */
 
- }
-
- nav{
+header{
     background: rgb(56, 84, 19);
     height: 95px;
     max-width: 100%;
  }
 
- .logo{
+.logo{
     color: lightgrey;
     font-size: 40px;
     line-height: 85px;
@@ -27,18 +24,18 @@
     font-family: 'Rubik Spray Paint';
  }
 
- nav ul{
+header ul{
     float: right;
     margin-right: 20px;
  }
 
- nav ul li{
+header ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 30px;
  }
 
-nav li a{
+header li a{
     color: lightgray;
     font-size: 30px;
     font-family: 'Rubik Spray Paint';
@@ -56,8 +53,10 @@ body{
     border-radius: 100px;
     height: 400px;
     width: auto;
-    margin-left: 200px;
     margin-top: 75px;
+    margin-left: 100px;
+    margin-bottom: 300px;
+
 }
 
 #parrot{
@@ -81,26 +80,78 @@ body{
     font-size: 100px;
   }
 
-  h2{
-    font-family: ;
+h2{
+  
+}
+
+#varför_oss_text_och_bild{ 
+  justify-content: space-around;
+}
+
+footer{
+  background: rgb(56, 84, 19);
+  height: 70px;
+  max-width: 100%;
+}
+
+main{
+background: rgb(147, 161, 127);
+height: 500px;
+}
+
+/* resturang */
+
+#restaurang{
+  background: rgb(147, 161, 127);
+}
+
+#grid_wrapper{
+  display: grid;
+  grid-template-areas: 
+  "m1 m2 m3"
+  "m4 m5 m6";
+  justify-content: space-between;
+}
+
+
+#mat1{
+  background: green;
+  height: 500px;
+  width: 400px;
+  grid-area: m1;
   }
 
-#mat1 {
-
-}
-#mat2 {
-
-}
-#mat3 {
-
-}
-#mat4 {
-
-}
-#mat5 {
-
-}
-#mat6 {
-
+#mat2{
+background: red;
+height: 500px;
+width: 400px;
+grid-area: m2;
 }
 
+#mat3{
+background: blue;
+height: 500px;
+width: 400px;
+grid-area: m3;
+}
+
+#mat4{
+background: yellow;
+height: 500px;
+width: 400px;
+grid-area: m4;
+}
+
+#mat5{
+background: purple;
+height: 500px;
+width: 400px;
+grid-area: m5;
+}
+
+#mat6{
+background: black;
+height: 500px;
+width: 400px;
+grid-area: m6;
+}
