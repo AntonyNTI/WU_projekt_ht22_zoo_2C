@@ -24,18 +24,18 @@ header{
     font-family: 'Rubik Spray Paint';
  }
 
-header ul{
+ul{
     float: right;
     margin-right: 20px;
  }
 
-header ul li{
+li{
     display: inline-block;
     line-height: 80px;
     margin: 0 30px;
  }
 
-header li a{
+a{
     color: lightgray;
     font-size: 30px;
     font-family: 'Rubik Spray Paint';
@@ -102,7 +102,38 @@ height: 500px;
 /* resturang */
 
 #restaurang{
-  background: rgb(147, 161, 127);
+  background:rgb(147, 161, 127);
+}
+
+#restaurang_h1{
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+#toprestaurang_gridwrapper{
+  display: grid;
+  grid-template-areas: 
+  "rp rp rb"
+;
+}
+
+#restaurang_bild_toppen{
+  grid-area: rb;
+  border-radius: 100px;
+  width: 600px;
+  margin-right: 75px;
+  margin-left: 100px;
+}
+
+#restaurang_p_loremtext{
+  grid-area: rp;
+  margin-left: 75px;
+  padding-top: 75px;
+}
+
+#meny_h2{
+  display: flex;
+  justify-content: center;
 }
 
 #grid_wrapper{
@@ -111,47 +142,59 @@ height: 500px;
   "m1 m2 m3"
   "m4 m5 m6";
   justify-content: space-between;
+  margin: 75px;
 }
 
-
 #mat1{
-  background: green;
-  height: 500px;
-  width: 400px;
   grid-area: m1;
   }
 
 #mat2{
-background: red;
-height: 500px;
-width: 400px;
 grid-area: m2;
 }
 
 #mat3{
-background: blue;
-height: 500px;
-width: 400px;
 grid-area: m3;
 }
 
 #mat4{
-background: yellow;
-height: 500px;
-width: 400px;
 grid-area: m4;
+margin-top: 150px;
 }
 
 #mat5{
-background: purple;
-height: 500px;
-width: 400px;
 grid-area: m5;
+margin-top: 150px;
 }
 
 #mat6{
-background: black;
-height: 500px;
-width: 400px;
 grid-area: m6;
+margin-top: 150px;
 }
+
+.mat{
+  height: 500px;
+  width: 400px;
+  padding: 10px;
+  background: rgb(71, 101, 32);
+}
+
+.bild_mat{
+  height: 230px;
+  width: 380px;
+}
+
+.mat_namn{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Rubik Spray Paint';
+  font-size: 40px;
+}
+
+.mat_beskrivning{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
