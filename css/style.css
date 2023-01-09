@@ -1,4 +1,9 @@
+/* import av font */
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Dirt&display=swap');
+
+/* tar bort grund inställningarna*/
 
 *{
     padding: 0;
@@ -6,18 +11,19 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Fredoka One';
  }
 
- /* homepage */
+/* header till alla tre sidor */
 
 header{
-    background: rgb(56, 84, 19);
+    background: rgb(81, 112, 40);
     height: 95px;
     max-width: 100%;
  }
 
 .logo{
-    color: lightgrey;
+    color: white;
     font-size: 40px;
     line-height: 85px;
     padding: 0 80px;
@@ -36,7 +42,7 @@ li{
  }
 
 a{
-    color: lightgray;
+    color: white;
     font-size: 30px;
     font-family: 'Rubik Spray Paint';
 }
@@ -45,24 +51,13 @@ a:hover{
     color: rgb(20, 37, 13);
 }
 
-body{
-    background: rgb(255, 255, 255);
-}
+ /* homepage */
 
-#goat {
-    border-radius: 100px;
-    height: 400px;
-    width: auto;
-    margin-top: 75px;
-    margin-left: 100px;
-    margin-bottom: 300px;
-
-}
+/* parrot bilden och texten i mitten */
 
 #parrot{
     height: auto;
     width: 100%;
-    float:left
 }
 
 .container {
@@ -80,35 +75,56 @@ body{
     font-size: 100px;
   }
 
-h2{
-  
+/* rubriken till öppnetider */
+
+#öppentider_h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 80px;
 }
 
-#varför_oss_text_och_bild{ 
-  justify-content: space-around;
+/* gridbox för att lägga bild bredvid text öppntider */
+
+#öppentider_gridwrapper{ 
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-areas: 
+  "tk tp"
 }
 
-footer{
-  background: rgb(56, 84, 19);
+#två_kompisar{
+  border-radius: 100px;
+  height: 400px;
+  width: auto;
+  grid-area: tk;
+  margin-left: 150px;
+}
+
+#tiderna_p{
+  display: flex;
+  align-items: center;
+  grid-area: tp;
+  font-size: 50px;
+  margin-right: 170px;
+}
+
+/* footer till index */
+
+#index_footer{
+  background: rgb(81, 112, 40);
   height: 70px;
-  max-width: 100%;
-}
-
-main{
-background: rgb(147, 161, 127);
-height: 500px;
 }
 
 /* resturang */
 
-#restaurang{
-  background:rgb(147, 161, 127);
-}
-
 #restaurang_h1{
   margin-left: 150px;
   margin-top: 50px;
+  font-size: 60px;
 }
+ 
+/* topp gridboxen bilden med text */
 
 #toprestaurang_gridwrapper{
   display: grid;
@@ -121,20 +137,27 @@ height: 500px;
   grid-area: rb;
   border-radius: 100px;
   width: 600px;
-  margin-right: 75px;
-  margin-left: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-bottom: 100px;
 }
 
 #restaurang_p_loremtext{
   grid-area: rp;
-  margin-left: 75px;
-  padding-top: 75px;
+  margin-left: 150px;
+  padding-top: 65px;
+  font-size: 17px;
 }
+
+/* rubrik till meny */
 
 #meny_h2{
   display: flex;
   justify-content: center;
+  font-size: 60px;
 }
+
+/* gridboxen för menyn */
 
 #grid_wrapper{
   display: grid;
@@ -172,11 +195,13 @@ grid-area: m6;
 margin-top: 150px;
 }
 
+/*innehåll av gridboxen*/
+
 .mat{
   height: 500px;
   width: 400px;
   padding: 10px;
-  background: rgb(71, 101, 32);
+  background: rgb(81, 112, 40);
 }
 
 .bild_mat{
@@ -189,12 +214,94 @@ margin-top: 150px;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-family: 'Rubik Spray Paint';
   font-size: 40px;
+  color: rgb(226, 226, 226);
 }
 
 .mat_beskrivning{
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 17px;
+  color: white;
 }
 
+/* footer till restaurang */
+
+#restaurang_footer{
+  background: rgb(81, 112, 40);
+  height: 70px;
+}
+/*Hitta hit*/
+
+#hitta_hit_h1{
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  font-size: 75px;
+}
+
+/* adress text och bild */
+
+#adress_h2{
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+#adress_bild_gridwrapper{
+  display: flex;
+  justify-content: center;
+}
+
+#adress_bild{
+  width: 1300px;
+  height: auto;
+}
+
+/*gridboxen*/
+
+#big_daddy_gridwrapper{
+  display: grid;
+  grid-template-areas: 
+  "np hh nh";
+  justify-content: space-between;
+}
+
+#närmaste_parkering_gridw{
+  grid-area: np;
+  padding: 20px;
+  padding-left: 200px;
+}
+
+#närmaste_hållplats_gridw{
+  grid-area: nh;
+  margin-right: 200px;
+  padding: 20px;
+}
+
+/*innehåll av girden*/
+
+#närmaste_hållplatser_h2{
+  margin-bottom: 13px;
+  font-size: 40px;
+}
+
+#närmaste_hållplatser_p{
+  font-size: 20px;
+}
+
+#närmaste_parkering_h2{
+  margin-bottom: 13px;
+  font-size: 40px;
+}
+
+#närmaste_parkering_p{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+/*footer till hitta hit*/
+
+#hitta_hit_footer{
+  background: rgb(81, 112, 40);
+  height: 70px;
+}
